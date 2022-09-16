@@ -13,7 +13,7 @@ export default function Background({ width, height, children }) {
         WAVES({
           THREE,
           el: vantaRef.current,
-          color: 0x70707,
+          color: 0x000000,
         })
       );
     }
