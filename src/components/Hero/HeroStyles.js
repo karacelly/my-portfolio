@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Span = styled.p`
-  font-size: 1.2em;
-  padding: 1em 0;
+  font-size: 2.5vh;
+  padding: 1vw 0;
   letter-spacing: 0.2em;
   background: linear-gradient(121.57deg, #ff5f5f 9%, #ff9898 40%);
   -webkit-background-clip: text;

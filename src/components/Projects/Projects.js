@@ -12,6 +12,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  Div,
 } from "./ProjectsStyles";
 import Image from "next/image";
 import {
@@ -30,23 +31,23 @@ const Projects = () => (
         return (
           <BlogCard key={i}>
             <Img src={p.image} />
-            <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
-            <div>
-              <TitleContent></TitleContent>
-              <TagList>
-                {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
-                })}
-              </TagList>
-            </div>
-            <UtilityList>
-              <ExternalLinks href={p.visit}>Code</ExternalLinks>
-              <ExternalLinks href={p.source}>Source</ExternalLinks>
-            </UtilityList>
+            <Div>
+              <TitleContent>
+                <HeaderThree title>{p.title}</HeaderThree>
+                <Hr />
+              </TitleContent>
+              <CardInfo className="card-info">{p.description}</CardInfo>
+              <UtilityList>
+                {p.deploy ? (
+                  <>
+                    <ExternalLinks href={p.visit}>Code</ExternalLinks>
+                    <ExternalLinks href={p.source}>Source</ExternalLinks>
+                  </>
+                ) : (
+                  <ExternalLinks href={p.visit}>Code</ExternalLinks>
+                )}
+              </UtilityList>
+            </Div>
           </BlogCard>
         );
       })}
