@@ -1,0 +1,77 @@
+.button {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 15px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.buttonText {
+  display: block;
+  padding: 25px 80px;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: linear-gradient(#ff5f5f, #ff7b7b);
+}
+
+.buttonText::before,
+.buttonText::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: linear-gradient(#ff5f5f, #ff7b7b);
+}
+.button:hover::before,
+.button:hover::after {
+  width: 100%;
+}
+.button:hover .buttonText::before,
+.button:hover .buttonText::after {
+  height: 100%;
+}
+/*----- .button 1 -----*/
+.button::before,
+.button::after {
+  transition-delay: 0.2s;
+}
+.button .buttonText::before,
+.button .buttonText::after {
+  transition-delay: 0s;
+}
+.button::before {
+  right: 0;
+  top: 0;
+}
+.button::after {
+  left: 0;
+  bottom: 0;
+}
+.button .buttonText::before {
+  left: 0;
+  top: 0;
+}
+.button .buttonText::after {
+  right: 0;
+  bottom: 0;
+}
+.button:hover::before,
+.button:hover::after {
+  transition-delay: 0s;
+}
+.button:hover .buttonText::before,
+.button:hover .buttonText::after {
+  transition-delay: 0.2s;
+}

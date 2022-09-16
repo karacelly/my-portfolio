@@ -1,4 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
+export const Span = styled.p`
+  font-size: 1.2em;
+  padding: 1em 0;
+  letter-spacing: 0.2em;
+  background: linear-gradient(121.57deg, #ff5f5f 9%, #ff9898 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0.5vh;
+  }
+`;
 
 export const LeftSection = styled.div`
   width: 100%;
