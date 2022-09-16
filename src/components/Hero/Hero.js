@@ -16,9 +16,10 @@ const Hero = (props) => (
         Kesya Amanda
       </SectionTitle>
       <SectionText>
-        Third year computer science student and currently working as a
-        laboratory asssistant at Binus University. Passionate about technology,
-        especially web and android development.
+        A curious third year computer science student who's passionate about
+        technology, especially web and android development. Currently working as
+        a Laboratory Asssistant also Operations and System Development (OSD)
+        staff at Binus University.
       </SectionText>
       <BorderButton>Learn More</BorderButton>
     </LeftSection>

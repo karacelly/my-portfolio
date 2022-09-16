@@ -4,8 +4,7 @@ export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
-  margin: 7.5em auto 8em auto;
-  max-width: 1040px;
+  margin: 10vw 5vw 11vw 5vw;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -26,9 +25,9 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-size: ${(props) => (props.main ? "65px" : "56px")};
-  line-height: ${(props) => (props.main ? "72px" : "56px")};
-  width: max-content;
+  font-size: ${(props) => (props.main ? "10vh" : "56px")};
+  line-height: ${(props) => (props.main ? "12vh" : "56px")};
+  width: max-conten5;
   max-width: 100%;
   background: linear-gradient(
     121.57deg,
@@ -58,11 +57,11 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  max-width: 800px;
-  font-size: 24px;
-  line-height: 40px;
+  max-width: 60vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
   font-weight: 300;
-  padding-bottom: 1em;
+  padding-bottom: 2.5vh;
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
