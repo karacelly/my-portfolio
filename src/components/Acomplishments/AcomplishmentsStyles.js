@@ -46,9 +46,7 @@ export const Box = styled.div`
     height: auto;
     padding: 2vh 3vw;
 
-    &:nth-child(2n) {
-      grid-row: 2;
-    }
+    border: 1px solid #ff9898;
   }
 `;
 export const BoxNum = styled.h5`

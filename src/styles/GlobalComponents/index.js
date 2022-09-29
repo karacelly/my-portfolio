@@ -222,7 +222,7 @@ export const ButtonFront = styled.button`
       : "none"};
 
   &:hover {
-    opacity: 0;
+    color: black;
   }
   &:focus {
     outline: none;
