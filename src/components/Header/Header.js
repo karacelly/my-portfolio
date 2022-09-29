@@ -1,11 +1,14 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillGoogleCircle,
+} from "react-icons/ai";
 
 import {
   Container,
-  Div1,
   Div2,
   Div3,
   NavLink,
@@ -15,13 +18,6 @@ import {
 
 const Header = () => (
   <Container>
-    <Div1>
-      <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-        </a>
-      </Link>
-    </Div1>
     <Div2>
       <li>
         <Link href="#projects">
@@ -34,14 +30,17 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
+        <Link href="#experience">
+          <NavLink>Experience</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/karacelly">
         <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="mailto:aracellykesya@gmail.com">
+        <AiFillGoogleCircle size="3rem" />
       </SocialIcons>
       <SocialIcons href="https://www.linkedin.com/in/kesyawijaya/">
         <AiFillLinkedin size="3rem" />

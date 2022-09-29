@@ -5,7 +5,7 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import BorderButton from "../../styles/GlobalComponents/BorderButton";
+import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, Span } from "./HeroStyles";
 
 const Hero = (props) => (
@@ -21,7 +21,7 @@ const Hero = (props) => (
         a Laboratory Asssistant also Operations and System Development (OSD)
         staff at Binus University.
       </SectionText>
-      <BorderButton>Learn More</BorderButton>
+      <Button onClick={props.handleClick}>Learn More</Button>
     </LeftSection>
   </Section>
 );

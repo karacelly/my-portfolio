@@ -15,6 +15,7 @@ export const Span = styled.p`
 
 export const LeftSection = styled.div`
   width: 100%;
+  margin-top: 10vh;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;

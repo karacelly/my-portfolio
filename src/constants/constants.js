@@ -18,15 +18,15 @@ export const projects = [
     source: "https://github.com/karacelly/adventure-of-lorenzo",
     id: 1,
   },
-  {
-    title: "Movie Witchuu",
-    description:
-      "My very first Flutter project. A simple mobile application to see list of movies available developed using Flutter.",
-    image: "/images/movie-witchuu.gif",
-    tags: ["Flutter"],
-    source: "https://github.com/karacelly/movie-witchuu",
-    id: 2,
-  },
+  // {
+  //   title: "Movie Witchuu",
+  //   description:
+  //     "My very first Flutter project. A simple mobile application to see list of movies available developed using Flutter.",
+  //   image: "/images/movie-witchuu.gif",
+  //   tags: ["Flutter"],
+  //   source: "https://github.com/karacelly/movie-witchuu",
+  //   id: 2,
+  // },
   {
     title: "Tohopedia",
     description:
@@ -34,7 +34,7 @@ export const projects = [
     image: "/images/tohopedia.png",
     tags: ["Next Js", "Golang", "Gqlgen"],
     source: "https://github.com/karacelly/tohopedia",
-    id: 3,
+    id: 2,
   },
   {
     title: "Subscriptly",
@@ -43,14 +43,12 @@ export const projects = [
     image: "/images/subscriptly.png",
     tags: ["Android", "Java", "Firebase", "Android Studio"],
     source: "https://github.com/karacelly/subscriptly",
-    id: 4,
+    id: 3,
   },
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2020, text: "Enrolled as Computer Science student" },
+  { year: 2021, text: "Worked as laboratory assistant" },
+  { year: 2022, text: "Promoted as operation and development staff" },
 ];

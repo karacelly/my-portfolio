@@ -2,13 +2,12 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
   padding-top: 2rem;
   align-items: center;
+  text-align: left;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -28,7 +27,7 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
