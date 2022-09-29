@@ -11,23 +11,24 @@ export const Span = styled.p`
   @media only screen and (max-width: 768px) {
     padding-bottom: 0.5vh;
   }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 2vh;
+  }
 `;
 
 export const LeftSection = styled.div`
   width: 100%;
   margin-top: 10vh;
+
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
     display: flex;
     flex-direction: column;
-
-    margin: 0 auto;
+    margin-top: 5vh;
   }
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
-
-    margin: 0 auto;
+    margin-top: 5vh;
   }
 `;

@@ -24,9 +24,10 @@ export const Div2 = styled.div`
   width: 60%;
   display: flex;
   justify-content: space-around;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    margin-bottom: 5vh;
+    // margin-bottom: 3vh;
   }
 `;
 export const Div3 = styled.div`

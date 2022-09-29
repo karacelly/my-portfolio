@@ -32,34 +32,39 @@ export const SectionTitle = styled.h2`
   max-width: 100%;
   margin-bottom: 16px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.main ? "56px" : "48px")};
-    line-height: ${(props) => (props.main ? "56px" : "48px")};
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 5vh;
+    line-height: 6vh;
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: 1.5vh 0;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
-    line-height: ${(props) => (props.main ? "32px" : "40px")};
+    font-size: 4vh;
+    line-height: 5vh;
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    padding: 2vh 0;
     max-width: 100%;
   }
 `;
 
 export const SectionText = styled.p`
-  max-width: 60vw;
+  max-width: 80vw;
   font-size: 1.5vw;
   line-height: 2vw;
   font-weight: 300;
   padding-bottom: 2.5vh;
   color: rgba(255, 255, 255, 0.5);
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 670px;
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
@@ -178,9 +183,9 @@ export const ButtonBack = styled.div`
   overflow: hidden;
   opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: ${({ alt }) => (alt ? "150px" : "184px")};
-    height: ${({ alt }) => (alt ? "52px" : "48px")};
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 20vh;
+    height: 5vh;
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
     margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
   }

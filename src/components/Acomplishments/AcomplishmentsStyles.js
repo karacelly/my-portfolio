@@ -78,14 +78,18 @@ export const BoxText = styled.p`
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 20px;
+    line-height: 24px;
+  }
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 16px;
     line-height: 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 15px;
   }
 `;
 
