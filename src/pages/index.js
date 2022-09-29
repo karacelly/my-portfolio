@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <Layout>
       {/* <Section grid> */}
-        <Hero />
-        {/* <BgAnimation /> */}
+      <Hero />
+      {/* <BgAnimation /> */}
       {/* </Section> */}
       <Projects />
       <Technologies />

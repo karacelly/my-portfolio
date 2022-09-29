@@ -5,7 +5,10 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiFillGoogleCircle,
+  AiOutlineProject,
 } from "react-icons/ai";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { MdWorkOutline } from "react-icons/md";
 
 import {
   Container,
@@ -16,22 +19,34 @@ import {
   Span,
 } from "./HeaderStyles";
 
-const Header = () => (
+const Header = (props) => (
   <Container>
     <Div2>
       <li>
         <Link href="#projects">
-          <NavLink>Projects</NavLink>
+          <NavLink style={{ display: "flex", alignItems: "center" }}>
+            <AiOutlineProject size="3rem" style={{ paddingRight: "1vh" }} />
+            <Span>Projects</Span>
+          </NavLink>
         </Link>
       </li>
       <li>
         <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+          <NavLink style={{ display: "flex", alignItems: "center" }}>
+            <HiOutlineDesktopComputer
+              size="3rem"
+              style={{ paddingRight: "1vh" }}
+            />
+            <Span>Technologies</Span>
+          </NavLink>
         </Link>
       </li>
       <li>
         <Link href="#experience">
-          <NavLink>Experience</NavLink>
+          <NavLink style={{ display: "flex", alignItems: "center" }}>
+            <MdWorkOutline size="3rem" style={{ paddingRight: "1vh" }} />
+            <Span>Experience</Span>
+          </NavLink>
         </Link>
       </li>
     </Div2>

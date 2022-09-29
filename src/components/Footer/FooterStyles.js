@@ -1,19 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   padding-top: 2rem;
   align-items: center;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
 `;
 
 export const LinkItem = styled.a`
@@ -107,7 +100,6 @@ export const SocialContainer = styled.div`
 
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
-    padding-right: 16px;
     flex-wrap: wrap;
   }
 `;
