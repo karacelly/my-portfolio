@@ -25,18 +25,11 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  color: white;
+  color: #ffffff;
   font-size: ${(props) => (props.main ? "8vh" : "56px")};
   line-height: ${(props) => (props.main ? "10vh" : "56px")};
   width: max-conten5;
   max-width: 100%;
-  background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
 
   @media ${(props) => props.theme.breakpoints.md} {
