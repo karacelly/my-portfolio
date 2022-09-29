@@ -51,4 +51,5 @@ export const TimeLineData = [
   { year: 2020, text: "Enrolled as Computer Science student" },
   { year: 2021, text: "Worked as laboratory assistant" },
   { year: 2022, text: "Promoted as operation and development staff" },
+  { year: 2022, text: "Participated at Tokopedia Devcamp 2022" },
 ];
