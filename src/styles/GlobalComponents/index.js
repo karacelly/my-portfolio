@@ -223,6 +223,7 @@ export const ButtonFront = styled.button`
 
   &:hover {
     color: black;
+    font-weight: bold;
   }
   &:focus {
     outline: none;
