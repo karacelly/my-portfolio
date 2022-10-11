@@ -26,7 +26,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h2`
   font-weight: 800;
   color: #ffffff;
-  font-size: ${(props) => (props.main ? "8vh" : "56px")};
+  font-size: ${(props) => (props.main ? "7vh" : "56px")};
   line-height: ${(props) => (props.main ? "10vh" : "56px")};
   width: max-conten5;
   max-width: 100%;
@@ -52,10 +52,10 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   max-width: 80vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   line-height: 2vw;
   font-weight: 300;
-  padding-bottom: 2.5vh;
+  padding-bottom: 3vh;
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -186,7 +186,7 @@ export const ButtonBack = styled.div`
   @media ${(props) => props.theme.breakpoints.lg} {
     width: 20vh;
     height: 5vh;
-    font-size: ${({ alt }) => (alt ? "20px" : "16px")};
+    font-size: 16px;
     margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
   }
 
@@ -239,6 +239,10 @@ export const ButtonFront = styled.button`
     opacity: 0.5;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
       inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 20px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {

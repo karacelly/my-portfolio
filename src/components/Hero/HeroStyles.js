@@ -12,6 +12,9 @@ export const Span = styled.p`
     padding-bottom: 0.5vh;
   }
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 2vh;
+  }
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 2vh;
   }
