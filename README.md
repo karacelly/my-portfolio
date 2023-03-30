@@ -24,4 +24,4 @@ This website is deployed on Vercel. Any changes pushed to the main branch of the
 
 ## Preview
 
-![This is a alt text.](https://i.ibb.co/ZJcydZh/preview.png "This is a sample image.")
+![This is a preview image](https://i.ibb.co/ZJcydZh/preview.png "This is a preview image.")
